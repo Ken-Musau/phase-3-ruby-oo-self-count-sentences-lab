@@ -15,11 +15,11 @@ class String
   end
 
   def count_sentences
-    self.split(/[!?.]/)
+    self.split(/[!?.]+/).count
   end
 
   
 end
 
 
-puts "Hi, my name is Sophie.".sentence?
+puts "This, well, is a sentence. This is too!! And so is this, I think? Woo...".count_sentences
